@@ -1,0 +1,42 @@
+import random
+
+beginner_projects = [
+    "Build a number guessing game",
+    "Create a simple calculator",
+    "Make a to-do list app",
+    "Write a password generator",
+    "Build a unit converter"
+]
+
+game_projects = [
+    "Text-based adventure game",
+    "Rock, Paper, Scissors",
+    "Hangman",
+    "Dice rolling simulator",
+    "Simple maze game"
+]
+
+automation_projects = [
+    "Rename files in a folder",
+    "Web scraper for headlines",
+    "Email sender bot",
+    "Automatic backup script",
+    "Password strength checker"
+]
+
+choice = input(
+    "What kind of project do you want? "
+    "(beginner / games / automation): "
+).lower()
+
+if choice == "beginner":
+    idea = random.choice(beginner_projects)
+elif choice == "games":
+    idea = random.choice(game_projects)
+elif choice == "automation":
+    idea = random.choice(automation_projects)
+else:
+    idea = "Unknown category — try beginner, games, or automation."
+
+print("\n project Idea:")
+print(idea)
