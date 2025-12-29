@@ -1,0 +1,4 @@
+import random
+
+roll = random.randint(1,12)
+print("You rolled a", roll)
